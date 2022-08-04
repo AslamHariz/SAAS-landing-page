@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap');
+
+:root {
+  --purple: #5A20CB;
+  --pink: #9424F0;
+  --blue: #538FFB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: 330px;
+  background: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav img {
+  width: 80px;
+  cursor: pointer;
+}
+
+nav .links {
+  display: none;
+  gap: 1em;
+  align-items: center;
+}
+
+nav .links button {
+  padding: 8px 14px;
+  background-color: var(--blue);
+  border: 0;
+  color: #fff;
+}
+
+nav .links button:hover {
+  cursor: pointer;
+  padding: 8px 14px;
+  background-color: #fff;
+  border: 0;
+  color: var(--blue);
+}
+
+nav .links h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+nav .links h4:first-child {
+  font-weight: 400;
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: var(--pinkish);
+}
+
+nav .links h4:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+nav .menu-btn {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+header .left-head {
+  color: #fff;
+  padding: 40px 20px;
+}
+
+header .left-head h1 {
+  padding-bottom: 20px;
+}
+
+header .left-head p {
+  font-weight: 100;
+}
+
+header .right-head {
+  display: none;
+}
+
+.hero {
+  padding: 20px;
+}
+
+.hero .hero-right h2 {
+  text-align: center;
+  color: var(--purple);
+}
+
+.hero .hero-right .feature {
+  padding-top: 20px;
+}
+
+.hero .hero-right .feature i {
+  float: left;
+  margin-right: 10px;
+}
+
+.hero-right .feature:nth-child(2) i {
+    color: #F28A3F;
+}
+
+.hero-right .feature:nth-child(3) i {
+  color: #7ACA3A;
+}
+
+.hero-right .feature:last-child i {
+  color: #3F9CF2;
+}
+
+.cards {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .7fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cards h2 {
+  grid-column: span 2;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--purple);
+}
+
+.cards .card {
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.cards .card img {
+  width: 50px;
+  padding: 20px 0 0 0;
+}
+
+.cards .card p {
+  padding: 15px 0;
+}
+
+@media only screen and (min-width: 1080px) {
+  header {
+    height: fit-content;
+    padding: 20px;
+  }
+
+  nav .menu-btn {
+    display: none;
+  }
+
+  nav .links {
+    display: flex;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .head-content {
+    display: flex;
+    align-items: center;
+  }
+
+  header .left-head {
+    width: 50%;
+  }
+
+  header .left-head h1 {
+    font-size: 3rem;
+
+  }
+
+  header .right-head {
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 600px;
+  }
+
+  section.hero {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  section.hero .hero-left {
+    width: 50%;
+  }
+
+  section.hero .hero-right h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    padding: 30px 100px 40px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .cards h2 {
+    grid-column: span 4;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  div#card {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px rgb(130, 122, 122);
+}
+
+  .top img{
+    width: 50px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 17px;
+    background-color: #FAEAEB;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+.bottom{
+    position: relative;
+    background-color: var(--purple);
+    border-radius: 12px;
+    color: #fff;
+    top: -1px;
+    left: -1px;
+    right: 0;
+    padding: 20px 30px 20px;
+    cursor: pointer;
+}
+
+.bottom h4{
+    margin-bottom: 15px;
+}
+
+  .cards .card img {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 17px;
+    background-color: #F2E7F5;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+  .card h4 {
+    margin-bottom: 15px;
+  }
+
+  .cards .card p {
+    padding: 0px 0;
+  }
+}
